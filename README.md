@@ -1,16 +1,5 @@
 ---
 
-# 4. Project 3: Spatial Partitioning Quadtree (C++)
-
-### Repository Name: `spatial-partitioning-quadtree`
-### Required Files in Repo:
-- `include/Quadtree.hpp` (Quadtree node definition and partitioning logic)
-- `src/main.cpp` (Visual or console demo comparing brute force vs Quadtree)
-- `CMakeLists.txt`
-- `README.md`
-
-### Copy & Paste Content for `README.md`:
-
 ```markdown
 # Spatial Partitioning Quadtree (2D Collision Optimization)
 
