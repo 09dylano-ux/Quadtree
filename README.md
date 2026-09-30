@@ -1,4 +1,3 @@
----
 
 ```markdown
 # Spatial Partitioning Quadtree (2D Collision Optimization)
