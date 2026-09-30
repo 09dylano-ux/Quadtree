@@ -1,6 +1,15 @@
 ---
 
-## 3. Spatial Partitioning Quadtree (C++)
+# 4. Project 3: Spatial Partitioning Quadtree (C++)
+
+### Repository Name: `spatial-partitioning-quadtree`
+### Required Files in Repo:
+- `include/Quadtree.hpp` (Quadtree node definition and partitioning logic)
+- `src/main.cpp` (Visual or console demo comparing brute force vs Quadtree)
+- `CMakeLists.txt`
+- `README.md`
+
+### Copy & Paste Content for `README.md`:
 
 ```markdown
 # Spatial Partitioning Quadtree (2D Collision Optimization)
@@ -22,7 +31,6 @@ A Quadtree recursively divides a 2D space into four smaller quadrants whenever a
 ## How It Works (The Metaphor)
 
 Imagine finding a single lost key inside a massive stadium:
-
 * **Brute Force ($O(N^2)$):** You inspect every single seat in the entire stadium, one by one.
 * **Quadtree ($O(N \log N)$):** You divide the stadium into 4 quarters. You ask, "Which quarter is the key in?" You instantly ignore the other 3 quarters, split the remaining section into 4 smaller zones, and narrow down the location in seconds.
 
@@ -30,9 +38,9 @@ Imagine finding a single lost key inside a massive stadium:
 
 ## Features
 
-- **Dynamic Node Splitting & Sub-division:** Automatically splits space when an arbitrary capacity threshold is exceeded.
+- **Dynamic Node Splitting & Subdivision:** Automatically splits space into 4 child quadrants when entity capacity threshold is reached.
 - **Fast Spatial Range Queries:** Query all entities within a custom bounding box without searching the entire world.
-- **Cache-Conscious Node Management:** Uses continuous memory allocation for nodes to minimize pointer chasing.
+- **Memory Optimization:** Uses continuous vector allocation for nodes to minimize pointer chasing and cache misses.
 
 ---
 
@@ -50,7 +58,7 @@ Testing 2,000 moving entities on a $1920 \times 1080$ screen:
 ## How to Build & Run
 
 ```bash
-git clone [https://github.com/YOUR_USERNAME/spatial-partitioning-quadtree.git](https://github.com/YOUR_USERNAME/spatial-partitioning-quadtree.git)
+git clone [https://github.com/zees_gathe/spatial-partitioning-quadtree.git](https://github.com/zees_gathe/spatial-partitioning-quadtree.git)
 cd spatial-partitioning-quadtree
 mkdir build && cd build
 cmake ..
